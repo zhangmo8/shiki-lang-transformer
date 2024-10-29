@@ -3,6 +3,10 @@
 import type { ShikiTransformer } from 'shiki'
 
 export interface TransformerLangOptions {
+  /**
+   * Prefix Class for code element
+   * @default: `language-`
+   */
   prefixClass?: string
 }
 

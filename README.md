@@ -6,6 +6,16 @@
 
 Generate from [sxzz/ts-lib-starter](https://github.com/sxzz/ts-lib-starter)
 
+If you need to generate language classes on code elements, you may need to use this plugin
+
+````md
+```ts
+console.log('Hello Shiki')
+```
+````
+
+- The outer `<code>` tag is modified: `<code class="language-ts">`
+
 ## Install
 
 ```bash
@@ -23,7 +33,10 @@ const html = await codeToHtml(code, {
   lang: 'ts',
   transformers: [
     // ...
-    transformerLanguageClass(),
+    // If you need a custom prefix, you can use the prefixClass option
+    transformerLanguageClass({
+      prefixClass: 'shiki-lang-',
+    }),
     // ...
   ],
 })
