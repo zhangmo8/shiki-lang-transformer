@@ -1,6 +1,6 @@
 {
   "name": "shiki-lang-transformer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@9.12.3",
   "description": "Generate language class with shiki",
   "type": "module",
