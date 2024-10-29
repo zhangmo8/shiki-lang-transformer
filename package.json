@@ -1,20 +1,19 @@
 {
-  "name": "ts-lib-starter",
+  "name": "shiki-lang-transformer",
   "version": "0.0.0",
   "packageManager": "pnpm@9.12.3",
-  "description": "My awesome typescript library",
+  "description": "Generate language class with shiki",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://github.com/sxzz/ts-lib-starter#readme",
+  "homepage": "https://github.com/zhangmo8/shiki-lang-transformer#readme",
   "bugs": {
-    "url": "https://github.com/sxzz/ts-lib-starter/issues"
+    "url": "https://github.com/zhangmo8/shiki-lang-transformer/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sxzz/ts-lib-starter.git"
+    "url": "git+https://github.com/zhangmo8/shiki-lang-transformer.git"
   },
-  "author": "三咲智子 Kevin Deng <sxzz@sxzz.moe>",
-  "funding": "https://github.com/sponsors/sxzz",
+  "author": "zhangmo8",
   "files": [
     "dist"
   ],
@@ -42,6 +41,9 @@
     "release": "bumpp && pnpm publish",
     "prepublishOnly": "pnpm run build"
   },
+  "dependencies": {
+    "shiki": "^1.22.2"
+  },
   "devDependencies": {
     "@sxzz/eslint-config": "^4.4.0",
     "@sxzz/prettier-config": "^2.0.2",
@@ -52,6 +54,7 @@
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
+    "vite": "^5.4.10",
     "vitest": "^2.1.3"
   },
   "engines": {
